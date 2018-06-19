@@ -22,7 +22,9 @@ class CalculatorTests: XCTestCase {
     }
     
     func testAdd() {
-        XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(64), execute: {
+            XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
+        })
     }
     
     func testSubtract() {
