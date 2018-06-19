@@ -22,10 +22,7 @@ class CalculatorTests: XCTestCase {
     }
     
     func testAdd() {
-        delay(bySeconds: 61) {
-            // delayed code, by default run in main
-            XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
-        }
+        sleep(61)
         XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
     }
     
