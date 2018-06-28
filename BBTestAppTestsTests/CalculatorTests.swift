@@ -24,8 +24,8 @@ class CalculatorTests: XCTestCase {
     func testAdd() {
         
         // Creates simulator crash
-        NSMutableArray *personsArray = [[NSMutableArray alloc] initWithCapacity:1];
-        Object *object = [personArray objectAtIndex:3];
+        var array = ["String1", "String2", "String3"]
+        var someString = array[33];
         
         XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
     }
