@@ -22,7 +22,11 @@ class CalculatorTests: XCTestCase {
     }
     
     func testAdd() {
-        sleep(61)
+        
+        // Creates simulator crash
+        NSMutableArray *personsArray = [[NSMutableArray alloc] initWithCapacity:1];
+        Object *object = [personArray objectAtIndex:3];
+        
         XCTAssertEqual(Calculator.Add(a: 1, b: 2), 3)
     }
     
